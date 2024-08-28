@@ -80,8 +80,10 @@ PublicationYear (year)
 Qty (int, default 0)
 Status (varchar)
 IsAvailable (tinyint, default 1)
-members
 
+
+
+Members
 Fields:
 id (int, primary key)
 name (varchar)
@@ -90,8 +92,10 @@ contact (varchar)
 outstanding_debt (decimal, default 0.00)
 date_of_registration (datetime, default current_timestamp)
 status (enum, default 'active')
-transactions
 
+
+
+Transactions
 Fields:
 transaction_id (int, primary key)
 book_id (int, foreign key)
