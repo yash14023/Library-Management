@@ -61,9 +61,7 @@ The data is stored in a MySQL database, with tables likely representing entities
 DataBase Name : lms 
 MySQL Database: The data is stored in a MySQL database with the following tables:
 
-books
-
-Fields:
+Books Fields:
 BookID (int, primary key)
 Title (varchar)
 Authors (varchar)
