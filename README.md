@@ -107,3 +107,20 @@ actual_return_date (date, nullable)
 outstanding_debt (decimal, default 0.00)
 current_due_amount (decimal, default 0.00)
 Payment_of_Outstanding_Amount (decimal, nullable)
+
+
+1. Landing Page
+![image](https://github.com/user-attachments/assets/4c6518e7-aa5e-45ea-b192-6a78451c5d7f)
+
+2. Book List 
+![image](https://github.com/user-attachments/assets/6290cce7-2810-4303-8416-36207127be96)
+
+3. Member List
+![image](https://github.com/user-attachments/assets/f2212140-703d-42f3-b4c8-d260ee1477dc)
+
+4. Transaction
+![image](https://github.com/user-attachments/assets/aab5f2d1-7044-4813-bb35-90d66774d171)
+
+Search Filter: 
+![image](https://github.com/user-attachments/assets/cbd46134-8fef-461b-a195-aa697f1be628)
+
