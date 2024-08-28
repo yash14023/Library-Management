@@ -50,6 +50,58 @@ A versatile and reusable component used across the entire project to display var
 
 
 Backend Overview
-Flask API: The backend is built using Flask, which serves as the API layer for the React frontend. It handles various operations such as CRUD operations for books, members, and transactions, as well as custom operations like issuing books or recording returns.
+Flask API: 
+The backend is built using Flask, which serves as the API layer for the React frontend. It handles various operations such as CRUD operations for books, members, and transactions, as well as custom operations like issuing books or recording returns.
 
-MySQL Database: The data is stored in a MySQL database, with tables likely representing entities like Books, Members, and Transactions. Flask interacts with this database to store and retrieve information as required by the frontend.
+MySQL Database: 
+The data is stored in a MySQL database, with tables likely representing entities like Books, Members, and Transactions. Flask interacts with this database to store and retrieve information as required by the frontend.
+
+
+
+DataBase Name : lms 
+MySQL Database: The data is stored in a MySQL database with the following tables:
+
+books
+
+Fields:
+BookID (int, primary key)
+Title (varchar)
+Authors (varchar)
+AverageRating (decimal)
+Isbn (varchar)
+Isbn13 (varchar)
+LanguageCode (varchar)
+NumPages (int)
+RatingsCount (int)
+TextReviewsCount (int)
+PublicationDate (date)
+Publisher (varchar)
+PublicationYear (year)
+Qty (int, default 0)
+Status (varchar)
+IsAvailable (tinyint, default 1)
+members
+
+Fields:
+id (int, primary key)
+name (varchar)
+email (varchar)
+contact (varchar)
+outstanding_debt (decimal, default 0.00)
+date_of_registration (datetime, default current_timestamp)
+status (enum, default 'active')
+transactions
+
+Fields:
+transaction_id (int, primary key)
+book_id (int, foreign key)
+member_id (int, foreign key)
+issue_date (date)
+return_date (date, nullable)
+rent_fee (decimal)
+status (enum, default 'issued')
+fine_amount (decimal, nullable)
+actual_return_date (date, nullable)
+outstanding_debt (decimal, default 0.00)
+current_due_amount (decimal, default 0.00)
+Payment_of_Outstanding_Amount (decimal, nullable)
